@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "847453790524",
+    "firebase_url": "https://let-s-chat-b78d1.firebaseio.com",
+    "project_id": "let-s-chat-b78d1",
+    "storage_bucket": "let-s-chat-b78d1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:847453790524:android:78bed2bb03ec1f4b4c7e39",
+        "android_client_info": {
+          "package_name": "com.Vicky007.let_us_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "847453790524-d8hnnks2vc9f0atcb1k59hdt8jl28p6n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKT3q2-z3K4nh0bhznPU3R8SeoGb6aaUU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "847453790524-d8hnnks2vc9f0atcb1k59hdt8jl28p6n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
