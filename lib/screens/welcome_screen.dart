@@ -16,10 +16,10 @@ class _WelcomeScreenState extends State<WelcomeScreen>
   Animation animation;
   void initState() {
     super.initState();
-    controller = AnimationController(
-        duration: Duration(seconds: 1), vsync: this, upperBound: 100.0);
-    animation = ColorTween(begin: Colors.blueGrey, end: Colors.white)
-        .animate(controller);
+    controller =
+        AnimationController(duration: Duration(seconds: 3), vsync: this);
+    animation =
+        ColorTween(begin: Colors.blue, end: Colors.white).animate(controller);
     controller.forward();
     controller.addListener(() {
       setState(() {});
@@ -53,6 +53,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                 TypewriterAnimatedTextKit(
                   text: ['Flash Chat'],
                   textStyle: TextStyle(
+                    color: Colors.black,
                     fontSize: 45.0,
                     fontWeight: FontWeight.w900,
                   ),
@@ -75,24 +76,6 @@ class _WelcomeScreenState extends State<WelcomeScreen>
               onPressed: () {
                 Navigator.pushNamed(context, RegistrationScreen.id);
               },
-            ),
-            Padding(
-              padding: EdgeInsets.symmetric(vertical: 16.0),
-              child: Material(
-                color: Colors.blueAccent,
-                borderRadius: BorderRadius.circular(30.0),
-                elevation: 5.0,
-                child: MaterialButton(
-                  onPressed: () {
-                    Navigator.pushNamed(context, RegistrationScreen.id);
-                  },
-                  minWidth: 200.0,
-                  height: 42.0,
-                  child: Text(
-                    'Register',
-                  ),
-                ),
-              ),
             ),
           ],
         ),
